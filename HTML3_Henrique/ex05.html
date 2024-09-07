@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>....</title>
+</head>
+<body>
+
+<h2>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h2>
+
+<form action="/submit" method="post">
+    <table>
+        <tr>
+            <td><label for="login">Login:</label></td>
+            <td><input type="text" id="login" name="login"></td>
+        </tr>
+        <tr>
+            <td><label for="senha">Senha:</label></td>
+            <td><input type="password" id="senha" name="senha"></td>
+        </tr>
+        <tr>
+            <td><label for="status">Status:</label></td>
+            <td>
+                <select id="status" name="status">
+                    <option value="ativo">Ativo</option>
+                    <option value="inativo">Inativo</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><label>Tipo:</label></td>
+            <td>
+                <input type="radio" id="tecnico" name="tipo" value="tecnico">
+                <label for="tecnico">Técnico</label>
+                <input type="radio" id="professor" name="tipo" value="professor">
+                <label for="professor">Professor</label>
+                <input type="radio" id="aluno" name="tipo" value="aluno">
+                <label for="aluno">Aluno</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="data_criacao">Data Criação:</label></td>
+            <td><input type="text" id="data_criacao" name="data_criacao"></td>
+        </tr>
+        <tr>
+            <td><label>Perfil:</label></td>
+            <td>
+                <input type="radio" id="convidado" name="perfil" value="convidado">
+                <label for="convidado">Convidado</label>
+                <input type="radio" id="administrador" name="perfil" value="administrador">
+                <label for="administrador">Administrador</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="observacoes">Observações:</label></td>
+            <td><textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea></td>
+        </tr>
+        <tr>
+            <td><label>Módulos:</label></td>
+            <td>
+                <input type="checkbox" id="compras" name="modulos" value="compras">
+                <label for="compras">Compras</label>
+                <input type="checkbox" id="biblioteca" name="modulos" value="biblioteca">
+                <label for="biblioteca">Biblioteca</label>
+                <input type="checkbox" id="academico" name="modulos" value="academico">
+                <label for="academico">Acadêmico</label><br>
+                <input type="checkbox" id="documentacao" name="modulos" value="documentacao">
+                <label for="documentacao">Documentação</label>
+                <input type="checkbox" id="recursos_humanos" name="modulos" value="recursos_humanos">
+                <label for="recursos_humanos">Recursos Humanos</label>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Cadastrar"></td>
+            <td><input type="reset" value="Excluir"></td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
